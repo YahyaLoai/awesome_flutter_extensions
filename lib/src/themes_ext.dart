@@ -14,7 +14,7 @@ extension Themes on BuildContext {
         icon: _iconTheme,
         primaryIcon: _primaryIconTheme,
         slider: _sliderTheme,
-        tabBarThemeData: _tabBarTheme,
+        tabBar: _tabBarTheme,
         tooltip: _tooltipTheme,
         card: _cardTheme,
         chip: _chipTheme,
@@ -137,7 +137,7 @@ class _Themes {
     required this.icon,
     required this.primaryIcon,
     required this.slider,
-    required this.tabBarThemeData,
+    required this.tabBar,
     required this.tooltip,
     required this.card,
     required this.chip,
@@ -206,7 +206,7 @@ class _Themes {
   final SliderThemeData slider;
 
   /// See [ThemeData.tabBarTheme].
-  final TabBarTheme tabBar;
+  final TabBarThemeData tabBar;
 
   /// See [ThemeData.tooltipTheme].
   final TooltipThemeData tooltip;
