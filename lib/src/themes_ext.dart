@@ -14,7 +14,7 @@ extension Themes on BuildContext {
         icon: _iconTheme,
         primaryIcon: _primaryIconTheme,
         slider: _sliderTheme,
-        tabBar: _tabBarTheme,
+        tabBarThemeData: _tabBarTheme,
         tooltip: _tooltipTheme,
         card: _cardTheme,
         chip: _chipTheme,
@@ -71,14 +71,14 @@ extension Themes on BuildContext {
       _themeData.inputDecorationTheme;
   IconThemeData get _primaryIconTheme => _themeData.primaryIconTheme;
   SliderThemeData get _sliderTheme => _themeData.sliderTheme;
-  TabBarTheme get _tabBarTheme => _themeData.tabBarTheme;
+  TabBarThemeData get _tabBarTheme => _themeData.tabBarTheme;
   TooltipThemeData get _tooltipTheme => _themeData.tooltipTheme;
-  CardTheme get _cardTheme => _themeData.cardTheme;
+  CardThemeData get _cardTheme => _themeData.cardTheme;
   ChipThemeData get _chipTheme => _themeData.chipTheme;
   AppBarTheme get _appBarTheme => _themeData.appBarTheme;
   ScrollbarThemeData get _scrollbarTheme => _themeData.scrollbarTheme;
   BottomAppBarTheme get _bottomAppBarTheme => _themeData.bottomAppBarTheme;
-  DialogTheme get _dialogTheme => _themeData.dialogTheme;
+  DialogThemeData get _dialogTheme => _themeData.dialogTheme;
   FloatingActionButtonThemeData get _floatingActionButtonTheme =>
       _themeData.floatingActionButtonTheme;
   NavigationRailThemeData get _navigationRailTheme =>
@@ -139,7 +139,7 @@ class _Themes {
     required this.icon,
     required this.primaryIcon,
     required this.slider,
-    required this.tabBar,
+    required this.tabBarThemeData,
     required this.tooltip,
     required this.card,
     required this.chip,
@@ -209,13 +209,13 @@ class _Themes {
   final SliderThemeData slider;
 
   /// See [ThemeData.tabBarTheme].
-  final TabBarTheme tabBar;
+  final TabBarThemeData tabBarThemeData;
 
   /// See [ThemeData.tooltipTheme].
   final TooltipThemeData tooltip;
 
   /// See [ThemeData.cardTheme].
-  final CardTheme card;
+  final CardThemeData card;
 
   /// See [ThemeData.chipTheme].
   final ChipThemeData chip;
@@ -230,7 +230,7 @@ class _Themes {
   final BottomAppBarTheme bottomAppBar;
 
   /// See [ThemeData.dialogTheme].
-  final DialogTheme dialog;
+  final DialogThemeData dialog;
 
   /// See [ThemeData.floatingActionButtonTheme].
   final FloatingActionButtonThemeData floatingActionButton;
