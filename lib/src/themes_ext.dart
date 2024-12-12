@@ -30,7 +30,6 @@ extension Themes on BuildContext {
         popupMenu: _popupMenuTheme,
         banner: _bannerTheme,
         divider: _dividerTheme,
-        buttonBar: _buttonBarTheme,
         bottomNavigationBar: _bottomNavigationBarTheme,
         timePicker: _timePickerTheme,
         textButton: _textButtonTheme,
@@ -90,7 +89,6 @@ extension Themes on BuildContext {
   PopupMenuThemeData get _popupMenuTheme => _themeData.popupMenuTheme;
   MaterialBannerThemeData get _bannerTheme => _themeData.bannerTheme;
   DividerThemeData get _dividerTheme => _themeData.dividerTheme;
-  ButtonBarThemeData get _buttonBarTheme => _themeData.buttonBarTheme;
   BottomNavigationBarThemeData get _bottomNavigationBarTheme =>
       _themeData.bottomNavigationBarTheme;
   TimePickerThemeData get _timePickerTheme => _themeData.timePickerTheme;
@@ -154,7 +152,6 @@ class _Themes {
     required this.popupMenu,
     required this.banner,
     required this.divider,
-    required this.buttonBar,
     required this.bottomNavigationBar,
     required this.timePicker,
     required this.textButton,
@@ -209,7 +206,7 @@ class _Themes {
   final SliderThemeData slider;
 
   /// See [ThemeData.tabBarTheme].
-  final TabBarThemeData tabBarThemeData;
+  final TabBarTheme tabBar;
 
   /// See [ThemeData.tooltipTheme].
   final TooltipThemeData tooltip;
@@ -255,9 +252,6 @@ class _Themes {
 
   /// See [ThemeData.dividerTheme].
   final DividerThemeData divider;
-
-  /// See [ThemeData.buttonBarTheme].
-  final ButtonBarThemeData buttonBar;
 
   /// See [ThemeData.bottomNavigationBarTheme].
   final BottomNavigationBarThemeData bottomNavigationBar;
